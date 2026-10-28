@@ -47,7 +47,7 @@ jobs:
         id: version
         run: |
           VERSION="$(cat VERSION)"
-          echo "version=${VERSION} > "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" > "$GITHUB_OUTPUT"
       - name: build release tarbal
         run: |
           chmod +x build.sh        
